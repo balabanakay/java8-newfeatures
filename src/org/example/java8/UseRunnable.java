@@ -30,9 +30,11 @@ public class UseRunnable {
 			System.out.println("Running Thread 1");
 		};
 		Runnable r2 = () -> System.out.println("Running Thread 2");
+		Runnable r3 = () -> System.out.println("Running thread 3");
 
 		new Thread(r1).start();
 		new Thread(r2).start();
+		new Thread(r3).start();
 		
 	}
 
